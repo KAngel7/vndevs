@@ -18,6 +18,9 @@ app.prepare()
         else if (pathname === '/b') {
             app.render(req, res, '/b', query);
         }
+        else if (pathname === '/test') {
+            app.render(req, res, '/test', query);
+        }
         else {
             handle(req, res, parsedUrl);
         }

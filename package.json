@@ -11,7 +11,7 @@
     "next": "latest",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "typescript": "latest",
+    "typescript": "3.0.1",
     "typescript-babel-jest": "^1.0.5"
   },
   "devDependencies": {

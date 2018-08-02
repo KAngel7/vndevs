@@ -1,6 +1,6 @@
 {
   "name": "vndevs",
-  "description": "Universal web app built on React.js, server-rendered with Node.js",
+  "description": "A web app built on React.js, server-rendered with Node.js, and deploy to heroku!",
   "scripts": {
   },
   "env": {
