@@ -1,39 +1,46 @@
-# node-js-getting-started
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/custom-server-typescript)
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+# Custom server with TypeScript + Nodemon example
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+## How to use
 
-## Running Locally
+### Using `create-next-app`
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
 
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
+```bash
+npx create-next-app --example custom-server-typescript custom-server-typescript-app
+# or
+yarn create next-app --example custom-server-typescript custom-server-typescript-app
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+### Download manually
 
-## Deploying to Heroku
+Download the example:
 
+```bash
+curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/custom-server-typescript
+cd custom-server-typescript
 ```
-$ heroku create
-$ git push heroku master
-$ heroku open
+
+Install it and run:
+
+```bash
+npm install
+npm run dev
+# or
+yarn
+yarn dev
 ```
-or
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
 
-## Documentation
+```bash
+now
+```
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+## The idea behind the example
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+The example shows how you can use [TypeScript](https://typescriptlang.com) on both the server and the client while using [Nodemon](https://nodemon.io/) to live reload the server code without affecting the Next.js universal code.
+Server entry point is `server/index.ts` in development and `production-server/index.js` in production.
+The second directory should be added to `.gitignore`.

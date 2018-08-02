@@ -1,31 +1,23 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "8.9.1"
-  },
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "dev": "nodemon server/index.ts",
+    "build": "next build && tsc --project tsconfig.server.json",
+    "start": "NODE_ENV=production node .next/production-server/index.js"
   },
   "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "@babel/core": "^7.0.0-beta.48",
+    "@zeit/next-typescript": "1.1.0",
+    "babel-loader": "^7.1.4",
+    "next": "latest",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "typescript": "latest",
+    "typescript-babel-jest": "^1.0.5"
   },
   "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+    "@types/next": "^2.4.11",
+    "@types/react": "^16.0.36",
+    "nodemon": "^1.17.5",
+    "ts-node": "^4.1.0"
+  }
 }
