@@ -1,3 +1,3 @@
 import React from 'react'
-
-export default () => <div>b</div>
+const t: number = 'kk' as any;
+export default () => <div>{t}</div>

@@ -2,7 +2,7 @@ import { createServer } from 'http'
 import { parse } from 'url'
 import * as next from 'next'
 
-const port = parseInt(process.env.PORT, 10) || 3000
+const port = parseInt(process.env.PORT, 10) || 3009
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
@@ -17,8 +17,6 @@ app.prepare()
       app.render(req, res, '/a', query)
     } else if (pathname === '/b') {
       app.render(req, res, '/b', query)
-    } else if (pathname === '/test') {
-      app.render(req, res, '/test', query)
     } else {
       handle(req, res, parsedUrl)
     }
