@@ -202,7 +202,7 @@ function (_React$Component) {
         className: "homeTitle"
       }, external__react__default.a.createElement("span", null, "VNDEVS")), external__react__default.a.createElement("div", {
         className: "homeSubtitle"
-      }, external__react__default.a.createElement("span", null, "Best Viet Nam outsourcing company")));
+      }, external__react__default.a.createElement("span", null, "Best Viet Nam outsourcing company!")));
     }
   }]);
 

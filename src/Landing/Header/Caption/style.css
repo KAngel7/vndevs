@@ -17,11 +17,9 @@
 
 .homeCaption {
   position: absolute;
-  padding: 30px;
-  width: 100%;
+  top: calc(50vh - 60px);
+  left: calc(50vw - 125px);
   text-align: center;
-  top: calc(50vh - 150px);
-  left: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -37,7 +35,7 @@
     line-height: 30px;
   }
   .homeCaption {
-    top: calc(50vh - 100px);
+    top: calc(50vh - 150px);
   }
 }
 
