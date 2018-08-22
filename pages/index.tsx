@@ -1,11 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
+import Landing from 'src/Landing';
 
-export default () => (
-  <React.Fragment>
-    <ul>
-      <li><Link href='/a' as='/a'><a>a</a></Link></li>
-      <li><Link href='/b' as='/b'><a>b</a></Link></li>
-    </ul>
-  </React.Fragment>
-)
+export default () => (<Landing />);

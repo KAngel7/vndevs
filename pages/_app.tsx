@@ -1,8 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 import App, { Container } from 'next/app';
+import 'src/App/style.css';
 
 export default class extends App {
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     const server = !!ctx.req;
     const out = { server } as any;
     if (Component.getInitialProps) {

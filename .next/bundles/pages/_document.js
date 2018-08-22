@@ -1816,7 +1816,8 @@ function (_Document) {
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("link", {
         rel: "shortcut icon",
-        href: "/static/img/favicon.ico",
+        type: "image/png/ico",
+        href: "/static/favicon.ico",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
@@ -1832,7 +1833,7 @@ function (_Document) {
         src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 37
         }
       }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
@@ -1840,12 +1841,12 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 39
         }
       }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("noscript", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 48
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", {
         height: "1",
@@ -1853,7 +1854,7 @@ function (_Document) {
         src: "//www.facebook.com/tr?id=".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */], "&ev=PageView&noscript=1"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 49
         }
       })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", _extends({
         src: "https://cdn.ravenjs.com/3.17.0/raven.min.js"
@@ -1862,7 +1863,7 @@ function (_Document) {
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 57
         }
       })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
@@ -1870,36 +1871,36 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 63
         }
       }), __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] ? __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js",
         type: "text/javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 69
         }
       }) : __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js",
         type: "text/javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 70
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 73
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 74
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 75
         }
       })));
     }

@@ -3,7 +3,7 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import {
   DEV, FB_TRACKING_ID, SENTRY_TRACKING_ID, SITE_DESCRIPTION, SITE_IMAGE,
   SITE_NAME, SITE_TITLE
-} from '../src/constants/env'
+} from '../src/constants/env';
 
 export default class extends Document {
   render() {
@@ -32,9 +32,8 @@ export default class extends Document {
             integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
             crossOrigin="anonymous"
           />
-          <link rel="shortcut icon" href="/static/img/favicon.ico" />
-          <link rel="stylesheet" href="/_next/static/style.css" />
-
+          <link rel="shortcut icon" type="image/png/ico" href="/static/favicon.ico" />
+          <link rel='stylesheet' href='/_next/static/style.css' />
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries"></script>
           {!DEV && FB_TRACKING_ID && (
             <script

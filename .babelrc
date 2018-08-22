@@ -1,4 +1,15 @@
 {
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ]
+  ],
   "env": {
     "development": {
       "presets": ["next/babel", "@zeit/next-typescript/babel"]
