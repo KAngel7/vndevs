@@ -9,7 +9,7 @@ class Caption extends React.Component<{}, {}> {
           <span>VNDEVS</span>
         </div>
         <div className="homeSubtitle">
-          <span>Best Viet Nam outsourcing company</span>
+          <span>Best Viet Nam outsourcing company!</span>
         </div>
       </div>
     );
