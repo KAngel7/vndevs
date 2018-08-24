@@ -20,7 +20,8 @@ app.prepare().then(() => {
       '/sitemap.xml',
       '/favicon.ico',
       '/browserconfig.xml',
-      '/company-logo.png'
+      '/company-logo.png',
+      '/google10b011c52af2aac6.html'
     ];
     if (rootStaticFiles.indexOf(pathname) > -1) {
       return app.serveStatic(req, res, `static${pathname}`);
