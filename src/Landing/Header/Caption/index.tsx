@@ -6,7 +6,7 @@ class Caption extends React.Component<{}, {}> {
     return (
       <div className="home-caption">
         <div className="home-title">
-          <h2>VNDEVS</h2>
+          <h1>VNDEVS</h1>
         </div>
         <div className="home-subtitle">
           <h3>Developers from Viet Nam</h3>

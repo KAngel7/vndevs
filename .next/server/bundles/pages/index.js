@@ -200,7 +200,7 @@ function (_React$Component) {
         className: "home-caption"
       }, external__react__default.a.createElement("div", {
         className: "home-title"
-      }, external__react__default.a.createElement("h2", null, "VNDEVS")), external__react__default.a.createElement("div", {
+      }, external__react__default.a.createElement("h1", null, "VNDEVS")), external__react__default.a.createElement("div", {
         className: "home-subtitle"
       }, external__react__default.a.createElement("h3", null, "Developers from Viet Nam")));
     }
