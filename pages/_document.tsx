@@ -2,7 +2,7 @@ import * as React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import {
   DEV, FB_TRACKING_ID, SENTRY_TRACKING_ID, SITE_DESCRIPTION, SITE_IMAGE,
-  SITE_NAME, SITE_TITLE
+  SITE_NAME, SITE_TITLE, SITE_KEYWORDS
 } from '../src/constants/env';
 
 export default class extends Document {
@@ -25,13 +25,9 @@ export default class extends Document {
           <meta name="twitter:description" content={SITE_DESCRIPTION} />
           <meta property="twitter:image" content={SITE_IMAGE} />
           <meta name="format-detection" content="telephone=no, address=no, email=no" />
-          <title>VNDEVS</title>
-          <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-            integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-            crossOrigin="anonymous"
-          />
+          <title>{SITE_NAME}</title>
+          <meta name="description" content={SITE_DESCRIPTION} />
+          <meta name="keywords" content={SITE_KEYWORDS} />
           <link rel="shortcut icon" type="image/png/ico" href="/static/favicon.ico" />
           <link rel='stylesheet' href='/_next/static/style.css' />
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries"></script>

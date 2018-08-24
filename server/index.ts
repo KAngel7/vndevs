@@ -19,7 +19,8 @@ app.prepare().then(() => {
       '/robots.txt',
       '/sitemap.xml',
       '/favicon.ico',
-      '/browserconfig.xml'
+      '/browserconfig.xml',
+      '/company-logo.png'
     ];
     if (rootStaticFiles.indexOf(pathname) > -1) {
       return app.serveStatic(req, res, `static${pathname}`);

@@ -1,1 +1,93 @@
-html{font-family:Avenir,Arial,Microsoft YaHei,-apple-system,sans-serif;font-size:12px;line-height:24px}body{margin:0}.header{width:100%;height:100vh;min-height:380px;position:relative;overflow:hidden;background-image:url("/static/imgs/background.jpg");background-size:cover}.header-particles:before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:#00000070;z-index:-1}.header-particles{width:100%;height:100%;position:relative;z-index:0}.menuBarWrapper{position:absolute;top:0;left:0;width:100%}.homeTitle{font-size:40px}.homeSubtitle,.homeTitle{text-transform:uppercase;color:#fff;font-weight:700}.homeSubtitle{text-align:center;font-size:14px;padding-bottom:20px;padding-top:5px}.homeCaption{position:absolute;top:calc(50vh - 60px);left:calc(50vw - 125px);text-align:center}@media screen and (max-width:991px){.homeTitle{font-size:34px;line-height:38px}}@media screen and (max-width:767px){.homeTitle{font-size:26px;line-height:30px}.homeCaption{top:calc(50vh - 150px)}}@media screen and (max-width:480px){.homeTitle{font-size:22px;line-height:26px}.homeSubtitle{font-size:12px}}
+.header {
+  width: 100%;
+  height: 100vh;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('/static/imgs/background.jpg');
+  background-size: cover;
+}
+
+.header-particles::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000070;
+  z-index: -1;
+}
+
+.header-particles {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.menuBarWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}.homeTitle {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.homeSubtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  padding-bottom: 20px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.homeCaption {
+  position: absolute;
+  top: calc(50vh - 60px);
+  left: calc(50vw - 125px);
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .homeTitle {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeTitle {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .homeCaption {
+    top: calc(50vh - 150px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homeTitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .homeSubtitle {
+    font-size: 12px;
+  }
+}html {
+  font-family: 'Avenir', 'Arial', 'Microsoft YaHei', -apple-system, sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map*/

@@ -1732,14 +1732,14 @@ function (_Document) {
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         property: "og:site_name",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_NAME */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_NAME */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         property: "og:title",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_TITLE */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["h" /* SITE_TITLE */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
@@ -1767,14 +1767,14 @@ function (_Document) {
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         name: "twitter:site",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_NAME */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_NAME */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         name: "twitter:title",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_TITLE */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["h" /* SITE_TITLE */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
@@ -1805,14 +1805,19 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 28
         }
-      }, "VNDEVS"), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("link", {
-        rel: "stylesheet",
-        href: "https://use.fontawesome.com/releases/v5.1.0/css/all.css",
-        integrity: "sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt",
-        crossOrigin: "anonymous",
+      }, __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_NAME */]), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
+        name: "description",
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SITE_DESCRIPTION */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
+        name: "keywords",
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_KEYWORDS */],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("link", {
         rel: "shortcut icon",
@@ -1820,20 +1825,20 @@ function (_Document) {
         href: "/static/favicon.ico",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 31
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("link", {
         rel: "stylesheet",
         href: "/_next/static/style.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 32
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 33
         }
       }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
@@ -1841,12 +1846,12 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 35
         }
       }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("noscript", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 44
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", {
         height: "1",
@@ -1854,7 +1859,7 @@ function (_Document) {
         src: "//www.facebook.com/tr?id=".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */], "&ev=PageView&noscript=1"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 45
         }
       })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", _extends({
         src: "https://cdn.ravenjs.com/3.17.0/raven.min.js"
@@ -1863,7 +1868,7 @@ function (_Document) {
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 53
         }
       })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
@@ -1871,36 +1876,36 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 59
         }
       }), __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] ? __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js",
         type: "text/javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 65
         }
       }) : __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js",
         type: "text/javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 66
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 69
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 70
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 71
         }
       })));
     }
@@ -1937,21 +1942,25 @@ function (_Document) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DEV; });
+/* unused harmony export SITE_DOMAIN */
 /* unused harmony export GA_TRACKING_ID */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FB_TRACKING_ID; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SENTRY_TRACKING_ID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return SITE_NAME; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return SITE_TITLE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return SITE_NAME; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return SITE_TITLE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SITE_DESCRIPTION; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SITE_IMAGE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return SITE_KEYWORDS; });
 var DEV = "development" !== 'production';
+var SITE_DOMAIN = 'https://www.vndevs.tk';
 var GA_TRACKING_ID = '';
 var FB_TRACKING_ID = '';
 var SENTRY_TRACKING_ID = '';
-var SITE_NAME = '';
-var SITE_TITLE = '';
-var SITE_DESCRIPTION = '';
-var SITE_IMAGE = '';
+var SITE_NAME = 'VNDEVS | VietNam Developers | IT consultants';
+var SITE_TITLE = 'VNDEVS | VietNam Developers | IT consultants';
+var SITE_DESCRIPTION = "We are developers from VietNam. We help you invent what's next, and bring it to life with technology.";
+var SITE_IMAGE = "".concat(SITE_DOMAIN, "/company-logo.png");
+var SITE_KEYWORDS = 'vndevs, vietnam developer, vietnam developers, viet nam developers, it consultants, vndevs consultants';
 
 /***/ }),
 
