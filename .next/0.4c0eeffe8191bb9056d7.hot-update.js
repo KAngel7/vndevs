@@ -1,5 +1,38 @@
 webpackHotUpdate(0,{
 
+/***/ "./src/App/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1535105732160");
+          });
+      }
+    }
+  
+
+/***/ }),
+
 /***/ "./src/Landing/Header/Caption/style.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25,7 +58,7 @@ webpackHotUpdate(0,{
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1535104272635");
+            injectCss(link, link.href.split("?")[0] + "?unix=1535105732169");
           });
       }
     }
@@ -58,7 +91,7 @@ webpackHotUpdate(0,{
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1535104272637");
+            injectCss(link, link.href.split("?")[0] + "?unix=1535105732171");
           });
       }
     }
@@ -91,7 +124,7 @@ webpackHotUpdate(0,{
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1535104272633");
+            injectCss(link, link.href.split("?")[0] + "?unix=1535105732166");
           });
       }
     }
@@ -124,7 +157,7 @@ webpackHotUpdate(0,{
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1535104272630");
+            injectCss(link, link.href.split("?")[0] + "?unix=1535105732163");
           });
       }
     }
@@ -133,4 +166,4 @@ webpackHotUpdate(0,{
 /***/ })
 
 })
-//# sourceMappingURL=0.439b04edf0ccf03be05a.hot-update.js.map
+//# sourceMappingURL=0.4c0eeffe8191bb9056d7.hot-update.js.map
