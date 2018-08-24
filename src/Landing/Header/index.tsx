@@ -13,7 +13,7 @@ class Header extends React.Component<{}, {}> {
           params={require('./particles-config.json')}
           className="header-particles"
         />
-        <div className="menuBarWrapper"> 
+        <div className="menu-bar-wrapper"> 
           <MenuBar />
         </div>
         <Caption />

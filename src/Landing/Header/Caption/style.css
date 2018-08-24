@@ -1,50 +1,57 @@
-.homeTitle {
+.home-title {
   text-transform: uppercase;
   font-size: 40px;
+  line-height: 40px;
   color: #fff;
   font-weight: bold;
 }
 
-.homeSubtitle {
+.home-subtitle {
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   color: #fff;
-  padding-bottom: 20px;
   font-weight: bold;
-  padding-top: 5px;
 }
 
-.homeCaption {
+.home-caption {
   position: absolute;
   top: calc(50vh - 60px);
-  left: calc(50vw - 90px);
+  left: calc(50vw - 110px);
   text-align: center;
 }
 
+.home-title > h2 {
+  margin-bottom: 5px;
+}
+
+.home-subtitle > h3 {
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 991px) {
-  .homeTitle {
+  .home-title {
     font-size: 34px;
     line-height: 38px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .homeTitle {
+  .home-title {
     font-size: 26px;
     line-height: 30px;
   }
-  .homeCaption {
+  .home-caption {
     top: calc(50vh - 150px);
   }
 }
 
 @media screen and (max-width: 480px) {
-  .homeTitle {
+  .home-title {
     font-size: 22px;
     line-height: 26px;
   }
-  .homeSubtitle {
+  .home-subtitle {
     font-size: 12px;
   }
 }
