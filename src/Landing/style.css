@@ -1,0 +1,27 @@
+.section-caption {
+  width: 100%;
+  height: 100vh;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('/static/imgs/background.jpg');
+  background-size: cover;
+}
+
+.landing-particles::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000070;
+  z-index: -1;
+}
+
+.landing-particles {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}

@@ -1,34 +1,45 @@
 .header {
-  width: 100%;
-  height: 100vh;
-  min-height: 380px;
-  position: relative;
-  overflow: hidden;
-  background-image: url('/static/imgs/background.jpg');
-  background-size: cover;
-}
-
-.header-particles::before {
-  content: "";
-  position: absolute;
-  top: 0;
+  padding: 14px 0;
+  position: fixed;
   left: 0;
+  top: 0;
   right: 0;
-  bottom: 0;
-  background: #00000070;
-  z-index: -1;
+  z-index: 997;
 }
 
-.header-particles {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 0;
+.nav-menu,.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none
 }
 
-.menu-bar-wrapper {
+.nav-menu ul {
   position: absolute;
-  top: 0;
+  display: none;
+  top: 100%;
   left: 0;
-  width: 100%;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu>li {
+  float: left;
+}
+
+.nav-menu li:hover>ul,.nav-menu li.sfHover>ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+  text-align: left;
 }

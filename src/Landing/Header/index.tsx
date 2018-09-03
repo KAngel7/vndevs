@@ -1,23 +1,33 @@
 import React from 'react';
-import Particles from 'react-particles-js';
 import './style.css';
-import MenuBar from './MenuBar';
-import Caption from './Caption';
+import Link from 'next/link';
 
 class Header extends React.Component<{}, {}> {
-
   render() {
     return (
-      <div className="header">
-        <Particles
-          params={require('./particles-config.json')}
-          className="header-particles"
-        />
-        <div className="menu-bar-wrapper"> 
-          <MenuBar />
+      <header className="header">
+        <div className="app-container">
+          <nav className="nav-menu">
+            <ul>
+              <li>
+                <Link prefetch href="/">
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li>
+                <Link prefetch href="/about">
+                  <a>About</a>
+                </Link>
+              </li>
+              <li>
+                <Link prefetch href="/contact">
+                  <a>Contact</a>
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <Caption />
-      </div>
+      </header>
     );
   }
 }
