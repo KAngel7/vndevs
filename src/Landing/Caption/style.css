@@ -3,31 +3,105 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   overflow: hidden;
 }
 
 .caption-section {
-  padding: 40px;
+  overflow: hidden;
   height: 100vh;
 }
 
-.home-subtitle {
+.caption-intro {
 
 }
 
-.home-caption {
+.home-subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700
+}
 
+.home-title {
+  text-align: center;
+  margin-top: 40vh;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  margin-top: 5px
+}
+
+.home-headline-section {
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.tech-image {
+  height: 300px;
+  width: 600px;
+  background-image: url('/static/imgs/tech.png');
+  background-size: cover;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 991px) {
-
+  .home-title {
+    font-size:34px;
+    line-height: 38px
+  }
 }
 
 @media screen and (max-width: 767px) {
-
+  .home-title {
+    font-size:26px;
+    line-height: 30px
+  }
 }
 
-@media screen and (max-width: 480px) {
-
+.footer-area {
+  padding: 100px 0;
+  background-color: #04091e
 }
+
+.footer-area h6 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600
+}
+
+.copy-right-text i,.copy-right-text a {
+  color: #3bacf0
+}
+
+.footer-social a {
+  padding-right: 25px;
+  transition: all 0.3s ease 0s
+}
+
+.footer-social a:hover i {
+  color: #3bacf0
+}
+
+.footer-social i {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s
+}
+
+@media (max-width: 991.98px) {
+  .footer-social {
+      text-align:left
+  }
+}
+
