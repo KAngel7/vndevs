@@ -162,10 +162,10 @@ function (_React$Component) {
         href: "/"
       }, external__react__default.a.createElement("a", null, "Home"))), external__react__default.a.createElement("li", null, external__react__default.a.createElement(link__default.a, {
         prefetch: true,
-        href: "/about"
+        href: "/"
       }, external__react__default.a.createElement("a", null, "About"))), external__react__default.a.createElement("li", null, external__react__default.a.createElement(link__default.a, {
         prefetch: true,
-        href: "/contact"
+        href: "/"
       }, external__react__default.a.createElement("a", null, "Contact")))))));
     }
   }]);

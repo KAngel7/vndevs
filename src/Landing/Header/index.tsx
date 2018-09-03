@@ -15,12 +15,12 @@ class Header extends React.Component<{}, {}> {
                 </Link>
               </li>
               <li>
-                <Link prefetch href="/about">
+                <Link prefetch href="/">
                   <a>About</a>
                 </Link>
               </li>
               <li>
-                <Link prefetch href="/contact">
+                <Link prefetch href="/">
                   <a>Contact</a>
                 </Link>
               </li>
