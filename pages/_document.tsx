@@ -2,7 +2,7 @@ import * as React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import {
   DEV, FB_TRACKING_ID, SENTRY_TRACKING_ID, SITE_DESCRIPTION, SITE_IMAGE,
-  SITE_NAME, SITE_TITLE, SITE_KEYWORDS, GA_TRACKING_ID
+  SITE_NAME, SITE_TITLE, SITE_KEYWORDS, GA_TRACKING_ID, GTAG_ID
 } from '../src/constants/env';
 
 export default class extends Document {
@@ -48,6 +48,19 @@ fbq('track', 'PageView'); `
                 src={`//www.facebook.com/tr?id=${FB_TRACKING_ID}&ev=PageView&noscript=1`}
               />
             </noscript>
+          )}
+          {!DEV && GTAG_ID && (
+            <React.Fragment>
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125125869-1"/>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GTAG_ID}');`
+                }}
+              />
+              </React.Fragment>
           )}
           {!DEV && GA_TRACKING_ID && (
             <React.Fragment>

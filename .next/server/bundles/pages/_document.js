@@ -107,6 +107,7 @@ var document__default = /*#__PURE__*/__webpack_require__.n(document_);
 var DEV = "production" !== 'production';
 var SITE_DOMAIN = 'https://www.vndevs.tk';
 var GA_TRACKING_ID = 'GTM-WB4RWJ9';
+var GTAG_ID = 'UA-125125869-1';
 var FB_TRACKING_ID = '';
 var SENTRY_TRACKING_ID = '';
 var SITE_NAME = 'VNDEVS | VietNam Developers | IT consultants';
@@ -211,6 +212,13 @@ function (_Document) {
         height: "1",
         width: "1",
         src: "//www.facebook.com/tr?id=".concat(FB_TRACKING_ID, "&ev=PageView&noscript=1")
+      })), !DEV && GTAG_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("script", {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-125125869-1"
+      }), external__react_["createElement"]("script", {
+        dangerouslySetInnerHTML: {
+          __html: "window.dataLayer = window.dataLayer || [];\n                  function gtag(){dataLayer.push(arguments);}\n                  gtag('js', new Date());\n                  gtag('config', '".concat(GTAG_ID, "');")
+        }
       })), !DEV && GA_TRACKING_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("style", null, '.async-hide { opacity: 0 !important}'), external__react_["createElement"]("script", {
         dangerouslySetInnerHTML: {
           __html: "(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;\n                  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};\n                  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;\n                  })(window,document.documentElement,'async-hide','dataLayer',4000,\n                  {'".concat(GA_TRACKING_ID, "':true});")

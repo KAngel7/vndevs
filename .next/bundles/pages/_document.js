@@ -1732,28 +1732,28 @@ function (_Document) {
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         property: "og:site_name",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["h" /* SITE_NAME */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["i" /* SITE_NAME */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         property: "og:title",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["i" /* SITE_TITLE */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["j" /* SITE_TITLE */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         property: "og:description",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["e" /* SITE_DESCRIPTION */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_DESCRIPTION */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         property: "og:image",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_IMAGE */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_IMAGE */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
@@ -1767,28 +1767,28 @@ function (_Document) {
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         name: "twitter:site",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["h" /* SITE_NAME */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["i" /* SITE_NAME */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         name: "twitter:title",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["i" /* SITE_TITLE */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["j" /* SITE_TITLE */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         name: "twitter:description",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["e" /* SITE_DESCRIPTION */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_DESCRIPTION */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         property: "twitter:image",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_IMAGE */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_IMAGE */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26
@@ -1805,16 +1805,16 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 28
         }
-      }, __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["h" /* SITE_NAME */]), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
+      }, __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["i" /* SITE_NAME */]), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         name: "description",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["e" /* SITE_DESCRIPTION */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["f" /* SITE_DESCRIPTION */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("meta", {
         name: "keywords",
-        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["g" /* SITE_KEYWORDS */],
+        content: __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["h" /* SITE_KEYWORDS */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30
@@ -1861,15 +1861,35 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 45
         }
-      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* GA_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
+      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* GTAG_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("style", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-125125869-1",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 54
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
+        dangerouslySetInnerHTML: {
+          __html: "window.dataLayer = window.dataLayer || [];\n                  function gtag(){dataLayer.push(arguments);}\n                  gtag('js', new Date());\n                  gtag('config', '".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* GTAG_ID */], "');")
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        }
+      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* GA_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("style", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
         }
       }, '.async-hide { opacity: 0 !important}'), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
@@ -1877,7 +1897,7 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 68
         }
       })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* GA_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
@@ -1885,53 +1905,53 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 80
         }
-      }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", _extends({
+      }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["e" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", _extends({
         src: "https://cdn.ravenjs.com/3.17.0/raven.min.js"
       }, {
         crossOrigin: 'anonymous'
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 93
         }
-      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
+      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["e" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
-          __html: "Raven.config('https://".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SENTRY_TRACKING_ID */], "@sentry.io/156600').install()")
+          __html: "Raven.config('https://".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["e" /* SENTRY_TRACKING_ID */], "@sentry.io/156600').install()")
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 99
         }
       }), __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] ? __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js",
         type: "text/javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 105
         }
       }) : __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js",
         type: "text/javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 106
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 109
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 110
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 111
         }
       })));
     }
@@ -1970,16 +1990,18 @@ function (_Document) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DEV; });
 /* unused harmony export SITE_DOMAIN */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return GA_TRACKING_ID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return GTAG_ID; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FB_TRACKING_ID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SENTRY_TRACKING_ID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return SITE_NAME; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return SITE_TITLE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SITE_DESCRIPTION; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return SITE_IMAGE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return SITE_KEYWORDS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SENTRY_TRACKING_ID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return SITE_NAME; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return SITE_TITLE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return SITE_DESCRIPTION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return SITE_IMAGE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return SITE_KEYWORDS; });
 var DEV = "development" !== 'production';
 var SITE_DOMAIN = 'https://www.vndevs.tk';
 var GA_TRACKING_ID = 'GTM-WB4RWJ9';
+var GTAG_ID = 'UA-125125869-1';
 var FB_TRACKING_ID = '';
 var SENTRY_TRACKING_ID = '';
 var SITE_NAME = 'VNDEVS | VietNam Developers | IT consultants';
