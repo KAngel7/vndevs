@@ -1,8 +1,8 @@
 
-export const DEV = process.env.NODE_ENV !== 'production'
+export const DEV = process.env.NODE_ENV !== 'production';
 
-export const SITE_DOMAIN = 'https://www.vndevs.tk'
-export const GA_TRACKING_ID = ''
+export const SITE_DOMAIN = 'https://www.vndevs.tk';
+export const GA_TRACKING_ID = 'GTM-WB4RWJ9';
 export const FB_TRACKING_ID = ''
 export const SENTRY_TRACKING_ID = ''
 

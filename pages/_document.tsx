@@ -2,7 +2,7 @@ import * as React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import {
   DEV, FB_TRACKING_ID, SENTRY_TRACKING_ID, SITE_DESCRIPTION, SITE_IMAGE,
-  SITE_NAME, SITE_TITLE, SITE_KEYWORDS
+  SITE_NAME, SITE_TITLE, SITE_KEYWORDS, GA_TRACKING_ID
 } from '../src/constants/env';
 
 export default class extends Document {
@@ -48,6 +48,33 @@ fbq('track', 'PageView'); `
                 src={`//www.facebook.com/tr?id=${FB_TRACKING_ID}&ev=PageView&noscript=1`}
               />
             </noscript>
+          )}
+          {!DEV && GA_TRACKING_ID && (
+            <React.Fragment>
+              <style>{'.async-hide { opacity: 0 !important}'}</style>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+                  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+                  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+                  })(window,document.documentElement,'async-hide','dataLayer',4000,
+                  {'${GA_TRACKING_ID}':true});`
+                }}
+              />
+            </React.Fragment>
+          )}
+          {!DEV && GA_TRACKING_ID && (
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                  ga('create', 'UA-62971524-1', 'auto');
+                  ga('require', '${GA_TRACKING_ID}');
+                  ga('send', 'pageview');`
+              }}
+            />
           )}
           {!DEV && SENTRY_TRACKING_ID && (
             <script
