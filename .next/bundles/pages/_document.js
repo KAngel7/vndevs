@@ -1930,15 +1930,23 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 82
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
+        dangerouslySetInnerHTML: {
+          __html: "fbq('track', 'ViewContent');"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 83
         }
+      }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88
+        }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 89
         }
       })));
     }

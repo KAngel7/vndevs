@@ -235,7 +235,11 @@ function (_Document) {
       }) : external__react_["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js",
         type: "text/javascript"
-      })), external__react_["createElement"]("body", null, external__react_["createElement"](document_["Main"], null), external__react_["createElement"](document_["NextScript"], null)));
+      })), external__react_["createElement"]("body", null, external__react_["createElement"]("script", {
+        dangerouslySetInnerHTML: {
+          __html: "fbq('track', 'ViewContent');"
+        }
+      }), external__react_["createElement"](document_["Main"], null), external__react_["createElement"](document_["NextScript"], null)));
     }
   }]);
 

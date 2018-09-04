@@ -80,6 +80,11 @@ export default class extends Document {
           }
         </Head>
         <body>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `fbq('track', 'ViewContent');`
+            }}
+          />
           <Main />
           <NextScript />
         </body>
