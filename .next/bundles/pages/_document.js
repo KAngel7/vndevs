@@ -1840,38 +1840,46 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 33
         }
-      }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
-        dangerouslySetInnerHTML: {
-          __html: "!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */], "');\nfbq('track', 'PageView'); ")
-        },
+      }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
         }
-      }), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("noscript", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
+        dangerouslySetInnerHTML: {
+          __html: "!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');\n                  fbq('init', '".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */], "');\n                  fbq('track', 'PageView'); ")
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 36
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("noscript", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", {
         height: "1",
         width: "1",
+        style: {
+          display: 'none'
+        },
         src: "//www.facebook.com/tr?id=".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["b" /* FB_TRACKING_ID */], "&ev=PageView&noscript=1"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 44
         }
-      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* GA_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
+      }))), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* GA_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         async: true,
         src: "https://www.googletagmanager.com/gtag/js?id=".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["c" /* GA_TRACKING_ID */]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 55
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
@@ -1879,18 +1887,23 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         }
-      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", _extends({
+      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", _extends({
         src: "https://cdn.ravenjs.com/3.17.0/raven.min.js"
       }, {
         crossOrigin: 'anonymous'
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 68
         }
-      })), !__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] && __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SENTRY_TRACKING_ID */] && __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
+      })), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         dangerouslySetInnerHTML: {
           __html: "Raven.config('https://".concat(__WEBPACK_IMPORTED_MODULE_2__src_constants_env__["d" /* SENTRY_TRACKING_ID */], "@sentry.io/156600').install()")
         },
@@ -1898,7 +1911,7 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 72
         }
-      }), __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] ? __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
+      })), __WEBPACK_IMPORTED_MODULE_2__src_constants_env__["a" /* DEV */] ? __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js",
         type: "text/javascript",
         __source: {
@@ -1974,7 +1987,7 @@ function (_Document) {
 var DEV = "development" !== 'production';
 var SITE_DOMAIN = 'https://www.vndevs.tk';
 var GA_TRACKING_ID = 'UA-125125869-1';
-var FB_TRACKING_ID = '';
+var FB_TRACKING_ID = '519955931762584';
 var SENTRY_TRACKING_ID = '';
 var SITE_NAME = 'VNDEVS | VietNam Developers | IT consultants';
 var SITE_TITLE = 'VNDEVS | VietNam Developers | IT consultants';

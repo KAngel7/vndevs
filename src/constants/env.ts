@@ -3,7 +3,7 @@ export const DEV = process.env.NODE_ENV !== 'production';
 
 export const SITE_DOMAIN = 'https://www.vndevs.tk';
 export const GA_TRACKING_ID = 'UA-125125869-1';
-export const FB_TRACKING_ID = ''
+export const FB_TRACKING_ID = '519955931762584'
 export const SENTRY_TRACKING_ID = ''
 
 export const SITE_NAME = 'VNDEVS | VietNam Developers | IT consultants'

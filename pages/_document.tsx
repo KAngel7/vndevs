@@ -32,22 +32,23 @@ export default class extends Document {
           <link rel='stylesheet' href='/_next/static/style.css' />
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries"></script>
           {!DEV && FB_TRACKING_ID && (
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '${FB_TRACKING_ID}');
-fbq('track', 'PageView'); `
-              }}
-            />
-          )}
-          {!DEV && FB_TRACKING_ID && (
-            <noscript>
-              <img
-                height="1"
-                width="1"
-                src={`//www.facebook.com/tr?id=${FB_TRACKING_ID}&ev=PageView&noscript=1`}
+            <React.Fragment>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+                  fbq('init', '${FB_TRACKING_ID}');
+                  fbq('track', 'PageView'); `
+                }}
               />
-            </noscript>
+              <noscript>
+                <img
+                  height="1"
+                  width="1"
+                  style={{ display: 'none' }}
+                  src={`//www.facebook.com/tr?id=${FB_TRACKING_ID}&ev=PageView&noscript=1`}
+                />
+              </noscript>
+            </React.Fragment>
           )}
           {!DEV && GA_TRACKING_ID && (
             <React.Fragment>
@@ -63,20 +64,19 @@ fbq('track', 'PageView'); `
               </React.Fragment>
           )}
           {!DEV && SENTRY_TRACKING_ID && (
-            <script
-              src="https://cdn.ravenjs.com/3.17.0/raven.min.js"
-              {...{ crossOrigin: 'anonymous' }}
-            ></script>
-          )}
-          {!DEV && SENTRY_TRACKING_ID && (
-            <script dangerouslySetInnerHTML={{
-              __html: `Raven.config('https://${SENTRY_TRACKING_ID}@sentry.io/156600').install()`
-            }}>
-            </script>
+            <React.Fragment>
+              <script
+                src="https://cdn.ravenjs.com/3.17.0/raven.min.js"
+                {...{ crossOrigin: 'anonymous' }}
+              />
+              <script dangerouslySetInnerHTML={{
+                __html: `Raven.config('https://${SENTRY_TRACKING_ID}@sentry.io/156600').install()`
+              }} />
+            </React.Fragment>
           )}
           {DEV
-            ? <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
-            : <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+            ? <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript" />
+            : <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript" />
           }
         </Head>
         <body>

@@ -107,7 +107,7 @@ var document__default = /*#__PURE__*/__webpack_require__.n(document_);
 var DEV = "production" !== 'production';
 var SITE_DOMAIN = 'https://www.vndevs.tk';
 var GA_TRACKING_ID = 'UA-125125869-1';
-var FB_TRACKING_ID = '';
+var FB_TRACKING_ID = '519955931762584';
 var SENTRY_TRACKING_ID = '';
 var SITE_NAME = 'VNDEVS | VietNam Developers | IT consultants';
 var SITE_TITLE = 'VNDEVS | VietNam Developers | IT consultants';
@@ -203,30 +203,33 @@ function (_Document) {
         href: "/_next/static/style.css"
       }), external__react_["createElement"]("script", {
         src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries"
-      }), !DEV && FB_TRACKING_ID && external__react_["createElement"]("script", {
+      }), !DEV && FB_TRACKING_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("script", {
         dangerouslySetInnerHTML: {
-          __html: "!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '".concat(FB_TRACKING_ID, "');\nfbq('track', 'PageView'); ")
+          __html: "!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');\n                  fbq('init', '".concat(FB_TRACKING_ID, "');\n                  fbq('track', 'PageView'); ")
         }
-      }), !DEV && FB_TRACKING_ID && external__react_["createElement"]("noscript", null, external__react_["createElement"]("img", {
+      }), external__react_["createElement"]("noscript", null, external__react_["createElement"]("img", {
         height: "1",
         width: "1",
+        style: {
+          display: 'none'
+        },
         src: "//www.facebook.com/tr?id=".concat(FB_TRACKING_ID, "&ev=PageView&noscript=1")
-      })), !DEV && GA_TRACKING_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("script", {
+      }))), !DEV && GA_TRACKING_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("script", {
         async: true,
         src: "https://www.googletagmanager.com/gtag/js?id=".concat(GA_TRACKING_ID)
       }), external__react_["createElement"]("script", {
         dangerouslySetInnerHTML: {
           __html: "window.dataLayer = window.dataLayer || [];\n                  function gtag(){dataLayer.push(arguments);}\n                  gtag('js', new Date());\n                  gtag('config', '".concat(GA_TRACKING_ID, "');")
         }
-      })), !DEV && SENTRY_TRACKING_ID && external__react_["createElement"]("script", _extends({
+      })), !DEV && SENTRY_TRACKING_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("script", _extends({
         src: "https://cdn.ravenjs.com/3.17.0/raven.min.js"
       }, {
         crossOrigin: 'anonymous'
-      })), !DEV && SENTRY_TRACKING_ID && external__react_["createElement"]("script", {
+      })), external__react_["createElement"]("script", {
         dangerouslySetInnerHTML: {
           __html: "Raven.config('https://".concat(SENTRY_TRACKING_ID, "@sentry.io/156600').install()")
         }
-      }), DEV ? external__react_["createElement"]("script", {
+      })), DEV ? external__react_["createElement"]("script", {
         src: "https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js",
         type: "text/javascript"
       }) : external__react_["createElement"]("script", {
