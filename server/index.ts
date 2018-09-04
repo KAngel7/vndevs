@@ -2,7 +2,7 @@ import * as express from 'express';
 import * as next from 'next';
 import * as compression from 'compression';
 
-const port = parseInt(process.env.PORT, 10) || 3007;
+const port = parseInt(process.env.PORT, 10) || 3017;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();

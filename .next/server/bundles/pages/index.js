@@ -160,13 +160,19 @@ function (_React$Component) {
       }, external__react__default.a.createElement("ul", null, external__react__default.a.createElement("li", null, external__react__default.a.createElement(link__default.a, {
         prefetch: true,
         href: "/"
-      }, external__react__default.a.createElement("a", null, "Home"))), external__react__default.a.createElement("li", null, external__react__default.a.createElement(link__default.a, {
+      }, external__react__default.a.createElement("a", {
+        title: "Home"
+      }, "Home"))), external__react__default.a.createElement("li", null, external__react__default.a.createElement(link__default.a, {
         prefetch: true,
         href: "/"
-      }, external__react__default.a.createElement("a", null, "About"))), external__react__default.a.createElement("li", null, external__react__default.a.createElement(link__default.a, {
+      }, external__react__default.a.createElement("a", {
+        title: "About"
+      }, "About"))), external__react__default.a.createElement("li", null, external__react__default.a.createElement(link__default.a, {
         prefetch: true,
         href: "/"
-      }, external__react__default.a.createElement("a", null, "Contact")))))));
+      }, external__react__default.a.createElement("a", {
+        title: "Contact"
+      }, "Contact")))))));
     }
   }]);
 
@@ -390,7 +396,8 @@ function (_React$Component) {
         className: "footer-social d-flex align-items-center"
       }, external__react__default.a.createElement("a", {
         href: "https://www.facebook.com/vndevs.tk/",
-        target: "_blank"
+        target: "_blank",
+        title: "Facebook page"
       }, "Facebook")))))))));
     }
   }]);
