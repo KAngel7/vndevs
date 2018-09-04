@@ -106,8 +106,7 @@ var document__default = /*#__PURE__*/__webpack_require__.n(document_);
 // CONCATENATED MODULE: ./src/constants/env.ts
 var DEV = "production" !== 'production';
 var SITE_DOMAIN = 'https://www.vndevs.tk';
-var GA_TRACKING_ID = 'GTM-WB4RWJ9';
-var GTAG_ID = 'UA-125125869-1';
+var GA_TRACKING_ID = 'UA-125125869-1';
 var FB_TRACKING_ID = '';
 var SENTRY_TRACKING_ID = '';
 var SITE_NAME = 'VNDEVS | VietNam Developers | IT consultants';
@@ -212,22 +211,14 @@ function (_Document) {
         height: "1",
         width: "1",
         src: "//www.facebook.com/tr?id=".concat(FB_TRACKING_ID, "&ev=PageView&noscript=1")
-      })), !DEV && GTAG_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("script", {
+      })), !DEV && GA_TRACKING_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("script", {
         async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=UA-125125869-1"
+        src: "https://www.googletagmanager.com/gtag/js?id=".concat(GA_TRACKING_ID)
       }), external__react_["createElement"]("script", {
         dangerouslySetInnerHTML: {
-          __html: "window.dataLayer = window.dataLayer || [];\n                  function gtag(){dataLayer.push(arguments);}\n                  gtag('js', new Date());\n                  gtag('config', '".concat(GTAG_ID, "');")
+          __html: "window.dataLayer = window.dataLayer || [];\n                  function gtag(){dataLayer.push(arguments);}\n                  gtag('js', new Date());\n                  gtag('config', '".concat(GA_TRACKING_ID, "');")
         }
-      })), !DEV && GA_TRACKING_ID && external__react_["createElement"](external__react_["Fragment"], null, external__react_["createElement"]("style", null, '.async-hide { opacity: 0 !important}'), external__react_["createElement"]("script", {
-        dangerouslySetInnerHTML: {
-          __html: "(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;\n                  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};\n                  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;\n                  })(window,document.documentElement,'async-hide','dataLayer',4000,\n                  {'".concat(GA_TRACKING_ID, "':true});")
-        }
-      })), !DEV && GA_TRACKING_ID && external__react_["createElement"]("script", {
-        dangerouslySetInnerHTML: {
-          __html: "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');\n                  ga('create', '".concat(GTAG_ID, "', 'auto');\n                  ga('require', '").concat(GA_TRACKING_ID, "');\n                  ga('send', 'pageview');")
-        }
-      }), !DEV && SENTRY_TRACKING_ID && external__react_["createElement"]("script", _extends({
+      })), !DEV && SENTRY_TRACKING_ID && external__react_["createElement"]("script", _extends({
         src: "https://cdn.ravenjs.com/3.17.0/raven.min.js"
       }, {
         crossOrigin: 'anonymous'

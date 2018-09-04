@@ -2,8 +2,7 @@
 export const DEV = process.env.NODE_ENV !== 'production';
 
 export const SITE_DOMAIN = 'https://www.vndevs.tk';
-export const GA_TRACKING_ID = 'GTM-WB4RWJ9';
-export const GTAG_ID = 'UA-125125869-1';
+export const GA_TRACKING_ID = 'UA-125125869-1';
 export const FB_TRACKING_ID = ''
 export const SENTRY_TRACKING_ID = ''
 
