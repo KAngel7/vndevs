@@ -45,6 +45,7 @@
 }
 
 .tech-image {
+  display: block;
   height: 300px;
   width: 100%;
   max-width: 600px;
@@ -52,6 +53,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
+
+.send-btn {
+  width: 100%;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 991px) {

@@ -10,17 +10,17 @@ class Header extends React.Component<{}, {}> {
           <nav className="nav-menu">
             <ul>
               <li>
-                <Link prefetch href="/">
+                <Link href="/">
                   <a title="Home">Home</a>
                 </Link>
               </li>
               <li>
-                <Link prefetch href="/">
+                <Link href="/">
                   <a title="About">About</a>
                 </Link>
               </li>
               <li>
-                <Link prefetch href="/">
+                <Link href="/">
                   <a title="Contact">Contact</a>
                 </Link>
               </li>

@@ -1,5 +1,6 @@
 import React from 'react';
-import App, { Container } from 'next/app';
+import App from 'next/app';
+import { SITE_NAME } from '../src/constants/env';
 import 'src/App/style.css';
 
 export default class extends App {
@@ -21,9 +22,10 @@ export default class extends App {
     const { props } = this as any;
     const { Component, pageProps } = props;
     return (
-      <Container>
+      <>
+        <title>{SITE_NAME}</title>
         <Component {...pageProps} />
-      </Container>
+      </>
     )
   }
 }

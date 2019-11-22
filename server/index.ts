@@ -1,6 +1,6 @@
-import * as express from 'express';
-import * as next from 'next';
-import * as compression from 'compression';
+import express from 'express';
+import next from 'next';
+import compression from 'compression';
 
 const port = parseInt(process.env.PORT, 10) || 3017;
 const dev = process.env.NODE_ENV !== 'production';

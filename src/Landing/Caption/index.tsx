@@ -16,7 +16,7 @@ class Caption extends React.Component<{}, {}> {
   isMove = false;
   translate = 0;
   componentDidMount() {
-    window.addEventListener('wheel', this.handleWheel);
+    window.addEventListener('wheel', this.handleWheel, { passive: false });
     this.startAnimate();
   }
   componentWillUnmount() {
@@ -28,6 +28,7 @@ class Caption extends React.Component<{}, {}> {
     this.a = e.deltaY / CAPTION_WEIGHT;
     if (this.a > MAX_A) this.a = MAX_A;
     if (this.a < -MAX_A) this.a = -MAX_A;
+    return false;
   };
   startAnimate = () => {
     this.isMove = true;
@@ -73,7 +74,7 @@ class Caption extends React.Component<{}, {}> {
               We are developers from VietNam. We help you invent what's next, and bring it to life with technology.
             </p>
             <p>
-              <div className="tech-image" />
+              <span className="tech-image" />
             </p>
           </div>
           <footer className="footer-area section-gap">
@@ -82,6 +83,7 @@ class Caption extends React.Component<{}, {}> {
                 <div className="col-lg-5 col-md-6 col-sm-6">
                   <div className="single-footer-widget">
                     <h6>About Us</h6>
+                    <p>Contact: contact@vndevs.com</p>
                     <p>Address: Tân Bình Dicstrict, Hồ Chí Minh city 700000</p>
                     <p className="footer-text">2018 All rights reserved</p>
                   </div>
@@ -93,7 +95,7 @@ class Caption extends React.Component<{}, {}> {
                     <div className="" id="mc_embed_signup">
                       <form target="_blank" action="" method="get" className="form-inline" noValidate>
                         <input type="email" className="form-control" name="EMAIL" placeholder="Enter Email" required />
-                        <button className="click-btn btn btn-default">
+                        <button className="send-btn btn btn-default">
                           Send
                         </button>
                         <div className="info">
@@ -106,11 +108,16 @@ class Caption extends React.Component<{}, {}> {
                   <div className="single-footer-widget">
                     <h6>Follow Us</h6>
                     <p>Let us be social</p>
-                    <div className="footer-social d-flex align-items-center">
+                    <p>
                       <a href="https://www.facebook.com/VietNamDevs/" target="_blank" title="Facebook page">
                         Facebook
                       </a>
-                    </div>
+                    </p>
+                    <p>
+                      <a href="https://www.linkedin.com/company/vndevs/" target="_blank" title="Facebook page">
+                        LinkedIn
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
