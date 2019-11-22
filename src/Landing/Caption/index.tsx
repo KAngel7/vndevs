@@ -1,5 +1,6 @@
 import React, { RefObject } from 'react';
 import './style.css';
+import { isDesktop } from '../../Services/utils';
 
 const CAPTION_WEIGHT = 3400;
 const FPS = 120;
@@ -16,13 +17,13 @@ class Caption extends React.Component<{}, {}> {
   isMove = false;
   translate = 0;
   componentDidMount() {
-    window.addEventListener('wheel', this.handleWheel, { passive: false });
-    window.addEventListener('touchmove', this.handleWheel, { passive: false });
+    isDesktop() && window.addEventListener('wheel', this.handleWheel, { passive: false });
   }
   componentWillUnmount() {
-    window.removeEventListener('wheel', this.handleWheel);
-    window.removeEventListener('touchmove', this.handleWheel);
-    this.stopAnimate();
+    if (isDesktop()) {
+      window.removeEventListener('wheel', this.handleWheel);
+      this.stopAnimate();
+    }
   }
   handleWheel = (e: WheelEvent) => {
     this.startAnimate();
