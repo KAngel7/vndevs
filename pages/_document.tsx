@@ -27,7 +27,11 @@ export default class extends Document {
           <meta name="format-detection" content="telephone=no, address=no, email=no" />
           <meta name="description" content={SITE_DESCRIPTION} />
           <meta name="keywords" content={SITE_KEYWORDS} />
-          <link rel="shortcut icon" type="image/png/ico" href="/favicon.ico" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="theme-color" content="#ffffff" />
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries"></script>
           {!DEV && FB_TRACKING_ID && (
             <React.Fragment>

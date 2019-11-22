@@ -21,7 +21,12 @@ app.prepare().then(() => {
       '/sitemap.xml',
       '/favicon.ico',
       '/browserconfig.xml',
-      '/company-logo.png'
+      '/company-logo.png',
+      '/site.webmanifest',
+      '/favicon-32x32.png',
+      '/favicon-16x16.png',
+      '/android-chrome-192x192.png',
+      '/android-chrome-512x512.png'
     ];
     if (rootStaticFiles.indexOf(pathname) > -1) {
       return app.serveStatic(req, res, `public${pathname}`);

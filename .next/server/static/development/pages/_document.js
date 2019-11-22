@@ -1409,9 +1409,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1__["createElement"];
       name: "keywords",
       content: _src_constants_env__WEBPACK_IMPORTED_MODULE_3__["SITE_KEYWORDS"]
     }), __jsx("link", {
-      rel: "shortcut icon",
-      type: "image/png/ico",
-      href: "/favicon.ico"
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/favicon-32x32.png"
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/favicon-16x16.png"
+    }), __jsx("link", {
+      rel: "manifest",
+      href: "/site.webmanifest"
+    }), __jsx("meta", {
+      name: "msapplication-TileColor",
+      content: "#da532c"
+    }), __jsx("meta", {
+      name: "theme-color",
+      content: "#ffffff"
     }), __jsx("script", {
       src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries"
     }), !_src_constants_env__WEBPACK_IMPORTED_MODULE_3__["DEV"] && _src_constants_env__WEBPACK_IMPORTED_MODULE_3__["FB_TRACKING_ID"] && __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, __jsx("script", {
