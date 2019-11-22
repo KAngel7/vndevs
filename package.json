@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "nodemon server/index.ts",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "NODE_ENV=production next start",
+    "start": "NODE_ENV=production next start -p $PORT",
     "delpoy": "git push heroku master"
   },
   "dependencies": {
