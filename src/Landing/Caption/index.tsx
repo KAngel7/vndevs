@@ -107,7 +107,7 @@ class Caption extends React.Component<{}, {}> {
                     <h6>Follow Us</h6>
                     <p>Let us be social</p>
                     <div className="footer-social d-flex align-items-center">
-                      <a href="https://www.facebook.com/vndevs.tk/" target="_blank" title="Facebook page">
+                      <a href="https://www.facebook.com/VietNamDevs/" target="_blank" title="Facebook page">
                         Facebook
                       </a>
                     </div>
