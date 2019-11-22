@@ -17,9 +17,11 @@ class Caption extends React.Component<{}, {}> {
   translate = 0;
   componentDidMount() {
     window.addEventListener('wheel', this.handleWheel, { passive: false });
+    window.addEventListener('touchmove', this.handleWheel, { passive: false });
   }
   componentWillUnmount() {
     window.removeEventListener('wheel', this.handleWheel);
+    window.removeEventListener('touchmove', this.handleWheel);
     this.stopAnimate();
   }
   handleWheel = (e: WheelEvent) => {
