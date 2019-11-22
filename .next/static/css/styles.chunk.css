@@ -462,16 +462,6 @@ body {
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.section-caption {
-  width: 100%;
-  height: 100vh;
-  min-height: 380px;
-  position: relative;
-  overflow: hidden;
-  background-image: url('/imgs/background.jpg');
-  background-size: cover;
-}
-
 .landing-particles::before {
   content: "";
   position: absolute;
@@ -485,9 +475,11 @@ body {
 
 .landing-particles {
   width: 100%;
-  height: 100%;
-  position: relative;
+  position: fixed;
+  height: 100vh;
   z-index: 0;
+  background-size: cover;
+  background-image: url(/imgs/background.jpg);
 }
 
 .header {
@@ -536,20 +528,12 @@ body {
   text-align: left;
 }
 .home-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
+  position: relative;
 }
 
 .caption-section {
   overflow: hidden;
   height: 100vh;
-}
-
-.caption-intro {
-
 }
 
 .home-subtitle {
