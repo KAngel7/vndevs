@@ -21,11 +21,10 @@ app.prepare().then(() => {
       '/sitemap.xml',
       '/favicon.ico',
       '/browserconfig.xml',
-      '/company-logo.png',
-      '/google10b011c52af2aac6.html'
+      '/company-logo.png'
     ];
     if (rootStaticFiles.indexOf(pathname) > -1) {
-      return app.serveStatic(req, res, `static${pathname}`);
+      return app.serveStatic(req, res, `public${pathname}`);
     }
     return handle(req, res)
   });
