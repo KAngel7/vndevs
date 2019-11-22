@@ -1411,7 +1411,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1__["createElement"];
     }), __jsx("link", {
       rel: "shortcut icon",
       type: "image/png/ico",
-      href: "/static/favicon.ico"
+      href: "/favicon.ico"
     }), __jsx("script", {
       src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes,String.prototype.includes,Array.prototype.findIndex,Object.entries"
     }), !_src_constants_env__WEBPACK_IMPORTED_MODULE_3__["DEV"] && _src_constants_env__WEBPACK_IMPORTED_MODULE_3__["FB_TRACKING_ID"] && __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, __jsx("script", {

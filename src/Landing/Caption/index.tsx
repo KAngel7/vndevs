@@ -17,13 +17,13 @@ class Caption extends React.Component<{}, {}> {
   translate = 0;
   componentDidMount() {
     window.addEventListener('wheel', this.handleWheel, { passive: false });
-    this.startAnimate();
   }
   componentWillUnmount() {
     window.removeEventListener('wheel', this.handleWheel);
     this.stopAnimate();
   }
   handleWheel = (e: WheelEvent) => {
+    this.startAnimate();
     e.preventDefault();
     this.a = e.deltaY / CAPTION_WEIGHT;
     if (this.a > MAX_A) this.a = MAX_A;
@@ -54,7 +54,10 @@ class Caption extends React.Component<{}, {}> {
   draw = (deltaTime: number) => {
     this.v += this.a * deltaTime;
     this.v *= (1 - SLOW);
-    if (Math.abs(this.v) < MIN_V) this.v = 0;
+    if (Math.abs(this.v) < MIN_V) {
+      this.v = 0;
+      this.stopAnimate();
+    };
     this.translate -= this.v * deltaTime;
     if (this.translate > 0) this.translate = 0;
     if (this.translate < -this.heightRef.current.clientHeight) 
