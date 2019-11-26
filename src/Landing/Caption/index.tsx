@@ -5,9 +5,16 @@ class Caption extends React.Component<{}, {}> {
   render() {
     return (
       <div className="home-caption">
+        <div className="home-logo-wrapper">
+          <div className="inner-circle"/>
+          <span className="logo" />
+        </div>
         <div className="caption-section caption-intro">
           <h1 className="home-title">VNDEVS</h1>
           <h3 className="home-subtitle">Developers from Viet Nam</h3>
+          <div className="home-button-wrapper">
+            <button className="btn btn-default">Join our network</button> 
+          </div>
         </div>
         <div className="caption-intro-2">
           <div className="home-headline-section">
@@ -36,7 +43,7 @@ class Caption extends React.Component<{}, {}> {
                     <div className="" id="mc_embed_signup">
                       <form target="_blank" action="" method="get" className="form-inline" noValidate>
                         <input type="email" className="form-control" name="EMAIL" placeholder="Enter Email" required />
-                        <button className="send-btn btn btn-default">
+                        <button className="send-btn btn btn-default" onClick={e => e.preventDefault()}>
                           Send
                         </button>
                         <div className="info">
@@ -49,16 +56,14 @@ class Caption extends React.Component<{}, {}> {
                   <div className="single-footer-widget">
                     <h6>Follow Us</h6>
                     <p>Let us be social</p>
-                    <p>
-                      <a href="https://www.facebook.com/VietNamDevs/" target="_blank" title="Facebook page">
-                        Facebook
+                    <div>
+                      <a className="fb-button" href="https://www.facebook.com/VietNamDevs/" target="_blank" title="Facebook page">
+                        {}
                       </a>
-                    </p>
-                    <p>
-                      <a href="https://www.linkedin.com/company/vndevs/" target="_blank" title="Facebook page">
-                        LinkedIn
+                      <a className="li-button" href="https://www.linkedin.com/company/vndevs/" target="_blank" title="Facebook page">
+                        {}
                       </a>
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
