@@ -564,8 +564,13 @@ body {
   width: 100px;
   height: 100px;
   position: absolute;
+  -moz-animation: spinoffPulse 5s infinite linear;
+  -webkit-animation: spinoffPulse 5s infinite linear;
+}
+
+.inner-circle:hover {
   -moz-animation: spinoffPulse 1s infinite linear;
-  -webkit-animation: spinoffPulse 3s infinite linear;
+  -webkit-animation: spinoffPulse 1s infinite linear;
 }
   
 @-moz-keyframes spinoffPulse {
