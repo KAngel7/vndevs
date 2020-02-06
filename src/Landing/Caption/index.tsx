@@ -6,14 +6,23 @@ class Caption extends React.Component<{}, {}> {
     return (
       <div className="home-caption">
         <div className="home-logo-wrapper">
-          <div className="inner-circle"/>
+          <div className="inner-circle">
+            <div className="fire" style={{ transform: "rotate(240deg)" }}>
+              {new Array(50).fill(<div className="particle" />)}
+            </div>
+            <div className="fire">
+              {new Array(50).fill(<div className="particle" />)}
+            </div>
+          </div>
           <span className="logo" />
         </div>
         <div className="caption-section caption-intro">
           <h1 className="home-title">VNDEVS</h1>
           <h3 className="home-subtitle">Developers from Viet Nam</h3>
           <div className="home-button-wrapper">
-            <button className="btn btn-default">Join our network</button> 
+            <a href="https://forum.vndevs.com">
+              <button className="btn btn-default">Join our network</button>
+            </a>
           </div>
         </div>
         <div className="caption-intro-2">

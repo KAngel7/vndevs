@@ -5,7 +5,6 @@ import Header from './Header';
 import Caption from './Caption';
 
 class Landing extends React.Component<{}, {}> {
-
   render() {
     return (
       <div className="landing">

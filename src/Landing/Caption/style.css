@@ -18,10 +18,10 @@
 }
 
 .inner-circle {
+  display: none;
   top: -20px;
   left: -20px;
   background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.6);
   border-left: 43px solid transparent;
   border-right: 43px solid transparent;
   border-radius: 100%;
