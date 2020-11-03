@@ -138,7 +138,7 @@ const Home = () => {
                   <p className="list-title has-text-primary has-text-weight-normal">
                     Languages we use:
                   </p>
-                  <p>Java, Javascript, NodeJS, HTML, Css</p>
+                  <p>Java, Javascript, NodeJS, React native</p>
                   <p className="list-title has-text-primary has-text-weight-normal">
                     Dev Tools:
                   </p>
@@ -148,8 +148,8 @@ const Home = () => {
                     <li>Atom</li>
                     <li>Codekit</li>
                     <li>Codepen</li>
-                    <li>Github</li>
-                    <li>Gitlab</li>
+                    <li>Xcode</li>
+                    <li>Android Studio</li>
                     <li>Terminal</li>
                   </ul>
                 </div>
@@ -163,8 +163,8 @@ const Home = () => {
                   </figure>
                   <h1 className="title is-size-4 is-spaced">Collaborating</h1>
                   <p>
-                    We work together, and use tools to improve our performance -
-                    keep project on the line.
+                    We work together, and use tools to improve our performance,
+                    quality - keep project on the line.
                   </p>
                   <p className="list-title has-text-primary has-text-weight-normal">
                     What we get:
@@ -549,7 +549,7 @@ const Home = () => {
             Core members
           </h1>
           <h2 className="subtitle is-size-5-desktop">
-            Meet our best guys and see their description
+            Meet our best guys and see what they are doing
           </h2>
           <div className="columns is-centered">
             <div className="column is-two-thirds">
