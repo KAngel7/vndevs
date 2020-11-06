@@ -686,7 +686,7 @@ const Home = () => {
               </a>
             </p>
           </div>
-          <div className="copyright">© VNDEVS Pte. Ltd. 2020</div>
+          <div className="copyright">© VNDEVS Pte. Ltd. 2020 (1)</div>
         </div>
       </footer>
       <script src="js/main-min.js"></script>
