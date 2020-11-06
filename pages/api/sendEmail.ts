@@ -23,7 +23,7 @@ export const sendEmail = (from, name, body) => {
       service: "Gmail",
       auth: {
         user: "huykhanh.id@gmail.com",
-        pass: "K@kkk5680",
+        pass: "KUU@kkk5680",
       },
     });
     var mainOptions = {
